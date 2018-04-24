@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="frame">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span style="color:green;font-size:16px">Fradi</span>
+                            <span style="color:purple;font-size:16px">-Újpest</span>
+                            <span style="color:black;font-size:16px">-FAN Cal-kulá-tor</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="display"></div>
+                        </div>
+                    </div>
+                    <div id="firstRow" class="row calcRows">
+                        <div class="col-sm-6">
+                            <button id="clear">Töröld az összes gólt</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button id="clearOne"> Törölj csak egy gólt</button>
+                        </div>
+                    </div>
+                    <div id="secondRow" class="row calcRows">
+                        <div class="col-sm-3">
+                            <button id="taps" class="btn btn-info">Taps</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="divide" class="btn btn-info">/</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="multiply" class="btn btn-info">X</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="minus" class="btn btn-info">-</button>
+                        </div>
+                    </div>
+                    <div id="thirdRow" class="row calcRows">
+                        <div class="col-sm-3">
+                            <button id="one" class="btn btn-info numbers">1</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="two" class="btn btn-info numbers">2</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="three" class="btn btn-info numbers">3</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-info bigButtons" id="plus">+
+                            </button>
+                        </div>
+                    </div>
+                    <div id="fourthRow" class="row calcRows">
+                        <div class="col-sm-3">
+                            <button id="four" class="btn btn-info">4</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="five" class="btn btn-info">5</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="six" class="btn btn-info">6</button>
+                        </div>
+                    </div>
+                    <div id="fifthRow" class="row calcRows">
+                        <div class="col-sm-3">
+                            <button id="seven" class="btn btn-info">7</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="eight" class="btn btn-info">8</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="nine" class="btn btn-info">9</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-info bigButtons" id="equal">=
+                            </button>
+                        </div>
+                    </div>
+                    <div id="sixthRow" class="row calcRows">
+                        <div class="col-sm-3">
+                            <button id="zero" class="btn btn-info">0</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="decimal" class="btn btn-info">.</button>
+                        </div>
+                        <audio id="myAudio">
+                            <source src="taps.wav" type="audio/mpeg"> 
+                        </audio>
+                        <audio id="myAudio2">
+                            <source src="megverlek.wav" type="audio/mpeg"> 
+                        </audio>
+                        <div class="col-sm-3">
+                            <button id="megverlek" class="btn btn-info">Megverlek!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
